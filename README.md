@@ -29,7 +29,7 @@
 | [jinpy666/dbx-plugin-kafka](https://github.com/jinpy666/dbx-plugin-kafka) | ![stars](https://img.shields.io/github/stars/jinpy666/dbx-plugin-kafka?color=f2f08d&logo=github) | 为 dbx 提供 Apache Kafka 访问与管理能力。 |
 | [jinpy666/dbx-plugin-ldap](https://github.com/jinpy666/dbx-plugin-ldap) | ![stars](https://img.shields.io/github/stars/jinpy666/dbx-plugin-ldap?color=f2f08d&logo=github) | 为 dbx 提供 LDAP 目录服务访问能力。 |
 | [eryajf/dbx-plugin-k8s](https://github.com/eryajf/dbx-plugin-k8s) | ![stars](https://img.shields.io/github/stars/eryajf/dbx-plugin-k8s?color=f2f08d&logo=github) | 为 dbx 提供 Kubernetes 集群访问与管理能力。 |
-| [ragdollcb/waitWork](https://github.com/ragdollcb/waitWork) | ![stars](https://img.shields.io/github/stars/ragdollcb/waitWork?color=f2f08d&logo=github) | waitWork 是 DBX 的休息工具插件，当前提供本地 TXT 小说阅读。 |
+| [ragdollcb/waitWork](https://github.com/ragdollcb/waitWork) | ![stars](https://img.shields.io/github/stars/ragdollcb/waitWork?color=f2f08d&logo=github) | 一个休息工具插件，提供本地 TXT 小说阅读功能。 |
 | [renpengkai/dbx-plugin-http-client](https://github.com/renpengkai/dbx-plugin-http-client) | ![stars](https://img.shields.io/github/stars/renpengkai/dbx-plugin-http-client?color=f2f08d&logo=github) | 类 Postman 的 HTTP 调试工作台。 |
 
 ## 贡献指南
@@ -40,6 +40,6 @@
 
 ## 其他
 
-- [DBX](https://github.com/t8y2/dbx)
-- [dbx-store](https://github.com/t8y2/dbx-store)
-- [dbx-plugin-skill](https://github.com/eryajf/dbx-plugin-skill)
+- [DBX](https://github.com/t8y2/dbx)：官方仓库
+- [dbx-store](https://github.com/t8y2/dbx-store)：应用商店仓库
+- [dbx-plugin-skill](https://github.com/eryajf/dbx-plugin-skill)：一个用于 DBX 插件开发 的 agent skill（技能包），覆盖从创建到上架官方商店的全链路
