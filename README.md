@@ -4,6 +4,7 @@
 [![Author](https://img.shields.io/badge/Author-eryajf-ff69b4.svg)](https://github.com/eryajf)
 [![GitHub license](https://img.shields.io/github/license/eryajf/awesome-dbx-plugins)](https://github.com/eryajf/awesome-dbx-plugins/blob/main/LICENSE)
 [![GitHub Stars](https://img.shields.io/github/stars/eryajf/awesome-dbx-plugins)](https://github.com/eryajf/awesome-dbx-plugins/stargazers)
+[![HitCount](https://views.whatilearened.today/views/github/eryajf/awesome-dbx-plugins.svg)](https://github.com/eryajf/awesome-dbx-plugins)
 [![Eryajf Blog](https://img.shields.io/badge/博客-二丫讲梵-d7b1bf?logo=Blogger)](https://wiki.eryajf.net)
 [![Eryajf Awesome Stars](https://img.shields.io/badge/Awesome-MyStarList-c780fa?logo=Awesome-Lists)](https://github.com/eryajf/awesome-stars-eryajf#readme)
 
@@ -40,6 +41,6 @@
 
 ## 其他
 
-- [DBX](https://github.com/t8y2/dbx)：官方仓库
+- [dbx](https://github.com/t8y2/dbx)：官方仓库
 - [dbx-store](https://github.com/t8y2/dbx-store)：应用商店仓库
 - [dbx-plugin-skill](https://github.com/eryajf/dbx-plugin-skill)：一个用于 DBX 插件开发 的 agent skill（技能包），覆盖从创建到上架官方商店的全链路
