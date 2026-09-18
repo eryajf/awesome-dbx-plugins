@@ -28,10 +28,11 @@
 | [t8y2/dbx-plugin-s3](https://github.com/t8y2/dbx-plugin-s3) | ![stars](https://img.shields.io/github/stars/t8y2/dbx-plugin-s3?color=f2f08d&logo=github) | 为 dbx 提供 Amazon S3 对象存储访问能力。 |
 | [jinpy666/dbx-plugin-ssh](https://github.com/jinpy666/dbx-plugin-ssh) | ![stars](https://img.shields.io/github/stars/jinpy666/dbx-plugin-ssh?color=f2f08d&logo=github) | 为 dbx 提供 SSH 连接与管理能力。 |
 | [jinpy666/dbx-plugin-files](https://github.com/jinpy666/dbx-plugin-files) | ![stars](https://img.shields.io/github/stars/jinpy666/dbx-plugin-files?color=f2f08d&logo=github) | 为 dbx 提供文件浏览与管理能力。 |
-| [jinpy666/dbx-plugin-kafka](https://github.com/jinpy666/dbx-plugin-kafka) | ![stars](https://img.shields.io/github/stars/jinpy666/dbx-plugin-kafka?color=f2f08d&logo=github) | 为 dbx 提供 Apache Kafka 访问与管理能力。 |
 | [jinpy666/dbx-plugin-ldap](https://github.com/jinpy666/dbx-plugin-ldap) | ![stars](https://img.shields.io/github/stars/jinpy666/dbx-plugin-ldap?color=f2f08d&logo=github) | 为 dbx 提供 LDAP 目录服务访问能力。 |
+| [jinpy666/dbx-plugin-kafka](https://github.com/jinpy666/dbx-plugin-kafka) | ![stars](https://img.shields.io/github/stars/jinpy666/dbx-plugin-kafka?color=f2f08d&logo=github) | 为 dbx 提供 Apache Kafka 访问与管理能力。 |
 | [eryajf/dbx-plugin-k8s](https://github.com/eryajf/dbx-plugin-k8s) | ![stars](https://img.shields.io/github/stars/eryajf/dbx-plugin-k8s?color=f2f08d&logo=github) | 为 dbx 提供 Kubernetes 集群访问与管理能力。 |
 | [ragdollcb/waitWork](https://github.com/ragdollcb/waitWork) | ![stars](https://img.shields.io/github/stars/ragdollcb/waitWork?color=f2f08d&logo=github) | 一个休息工具插件，提供本地 TXT 小说阅读功能。 |
+| [yaoxinghuo/dbx-dev-tools](https://github.com/yaoxinghuo/dbx-dev-tools) | ![stars](https://img.shields.io/github/stars/yaoxinghuo/dbx-dev-tools?color=f2f08d&logo=github) |  |
 | [renpengkai/dbx-plugin-http-client](https://github.com/renpengkai/dbx-plugin-http-client) | ![stars](https://img.shields.io/github/stars/renpengkai/dbx-plugin-http-client?color=f2f08d&logo=github) | 类 Postman 的 HTTP 调试工作台。 |
 <!-- dbx-plugin-table:end -->
 
