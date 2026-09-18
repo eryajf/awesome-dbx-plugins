@@ -1,0 +1,47 @@
+name: Sync official DBX plugins
+
+on:
+  schedule:
+    # Run every two hours, offset from the top of the hour.
+    - cron: "17 */2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: sync-official-plugins
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Synchronize plugin table
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python scripts/sync_plugins.py
+
+      - name: Create or update synchronization PR
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ github.token }}
+          branch: automation/sync-official-plugins
+          delete-branch: true
+          base: ${{ github.event.repository.default_branch }}
+          title: "chore: sync official DBX plugins"
+          commit-message: "chore: sync official DBX plugins"
+          body: |
+            This automated PR synchronizes the plugin table with the official
+            `t8y2/dbx-store` plugin sources.
+
+            Please review the generated changes before merging.

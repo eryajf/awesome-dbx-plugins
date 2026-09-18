@@ -22,6 +22,7 @@
 
 ## 插件列表
 
+<!-- dbx-plugin-table:start -->
 | Repository | Star | Description |
 | --- | --- | --- |
 | [t8y2/dbx-plugin-s3](https://github.com/t8y2/dbx-plugin-s3) | ![stars](https://img.shields.io/github/stars/t8y2/dbx-plugin-s3?color=f2f08d&logo=github) | 为 dbx 提供 Amazon S3 对象存储访问能力。 |
@@ -32,6 +33,7 @@
 | [eryajf/dbx-plugin-k8s](https://github.com/eryajf/dbx-plugin-k8s) | ![stars](https://img.shields.io/github/stars/eryajf/dbx-plugin-k8s?color=f2f08d&logo=github) | 为 dbx 提供 Kubernetes 集群访问与管理能力。 |
 | [ragdollcb/waitWork](https://github.com/ragdollcb/waitWork) | ![stars](https://img.shields.io/github/stars/ragdollcb/waitWork?color=f2f08d&logo=github) | 一个休息工具插件，提供本地 TXT 小说阅读功能。 |
 | [renpengkai/dbx-plugin-http-client](https://github.com/renpengkai/dbx-plugin-http-client) | ![stars](https://img.shields.io/github/stars/renpengkai/dbx-plugin-http-client?color=f2f08d&logo=github) | 类 Postman 的 HTTP 调试工作台。 |
+<!-- dbx-plugin-table:end -->
 
 ## 贡献指南
 
