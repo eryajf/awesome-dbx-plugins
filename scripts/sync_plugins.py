@@ -53,7 +53,19 @@ def existing_descriptions(readme: str) -> dict[str, str]:
     return descriptions
 
 
-def render(repositories: list[str], descriptions: dict[str, str]) -> str:
+def existing_rows(readme: str) -> dict[str, str]:
+    """Return existing plugin rows, including entries outside the official list."""
+    rows: dict[str, str] = {}
+    for line in readme.splitlines():
+        match = re.match(r"\| \[([^]]+)\]\(https://github\.com/[^)]+\) \|", line)
+        if match:
+            rows[match.group(1)] = line
+    return rows
+
+
+def render(
+    repositories: list[str], descriptions: dict[str, str], preserved_rows: list[str]
+) -> str:
     rows = ["| Repository | Star | Description |", "| --- | --- | --- |"]
     for repository in repositories:
         metadata = get_json(API_URL.format(repository))
@@ -65,6 +77,7 @@ def render(repositories: list[str], descriptions: dict[str, str]) -> str:
         rows.append(
             f"| [{repository}]({html_url}) | ![stars](https://img.shields.io/github/stars/{repository}?color=f2f08d&logo=github) | {description} |"
         )
+    rows.extend(preserved_rows)
     return "\n".join(rows)
 
 
@@ -74,7 +87,12 @@ def main() -> int:
     if START not in readme or END not in readme or readme.index(START) >= readme.index(END):
         raise RuntimeError("README.md is missing a valid plugin table marker pair")
     repositories = validate_sources(get_json(SOURCE_URL))
-    table = render(repositories, existing_descriptions(readme))
+    current_rows = existing_rows(readme)
+    official_repositories = set(repositories)
+    preserved_rows = [
+        row for repository, row in current_rows.items() if repository not in official_repositories
+    ]
+    table = render(repositories, existing_descriptions(readme), preserved_rows)
     pattern = re.compile(re.escape(START) + r".*?" + re.escape(END), re.DOTALL)
     replacement = f"{START}\n{table}\n{END}"
     updated = pattern.sub(replacement, readme, count=1)
