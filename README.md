@@ -25,14 +25,14 @@
 <!-- dbx-plugin-table:start -->
 | Repository | Star | Description |
 | --- | --- | --- |
-| [t8y2/dbx-plugin-s3](https://github.com/t8y2/dbx-plugin-s3) | ![stars](https://img.shields.io/github/stars/t8y2/dbx-plugin-s3?color=f2f08d&logo=github) | 为 dbx 提供 Amazon S3 对象存储访问能力。 |
-| [jinpy666/dbx-plugin-ssh](https://github.com/jinpy666/dbx-plugin-ssh) | ![stars](https://img.shields.io/github/stars/jinpy666/dbx-plugin-ssh?color=f2f08d&logo=github) | 为 dbx 提供 SSH 连接与管理能力。 |
-| [jinpy666/dbx-plugin-files](https://github.com/jinpy666/dbx-plugin-files) | ![stars](https://img.shields.io/github/stars/jinpy666/dbx-plugin-files?color=f2f08d&logo=github) | 为 dbx 提供文件浏览与管理能力。 |
-| [jinpy666/dbx-plugin-kafka](https://github.com/jinpy666/dbx-plugin-kafka) | ![stars](https://img.shields.io/github/stars/jinpy666/dbx-plugin-kafka?color=f2f08d&logo=github) | 为 dbx 提供 Apache Kafka 访问与管理能力。 |
-| [jinpy666/dbx-plugin-ldap](https://github.com/jinpy666/dbx-plugin-ldap) | ![stars](https://img.shields.io/github/stars/jinpy666/dbx-plugin-ldap?color=f2f08d&logo=github) | 为 dbx 提供 LDAP 目录服务访问能力。 |
-| [eryajf/dbx-plugin-k8s](https://github.com/eryajf/dbx-plugin-k8s) | ![stars](https://img.shields.io/github/stars/eryajf/dbx-plugin-k8s?color=f2f08d&logo=github) | 为 dbx 提供 Kubernetes 集群访问与管理能力。 |
-| [ragdollcb/waitWork](https://github.com/ragdollcb/waitWork) | ![stars](https://img.shields.io/github/stars/ragdollcb/waitWork?color=f2f08d&logo=github) | 一个休息工具插件，提供本地 TXT 小说阅读功能。 |
-| [renpengkai/dbx-plugin-http-client](https://github.com/renpengkai/dbx-plugin-http-client) | ![stars](https://img.shields.io/github/stars/renpengkai/dbx-plugin-http-client?color=f2f08d&logo=github) | 类 Postman 的 HTTP 调试工作台。 |
+| [t8y2/dbx-plugin-s3](https://github.com/t8y2/dbx-plugin-s3) | ![stars](https://img.shields.io/github/stars/t8y2/dbx-plugin-s3?color=f2f08d&logo=github) | S3-compatible object storage plugin for DBX |
+| [jinpy666/dbx-plugin-ssh](https://github.com/jinpy666/dbx-plugin-ssh) | ![stars](https://img.shields.io/github/stars/jinpy666/dbx-plugin-ssh?color=f2f08d&logo=github) | DBX SSH & SFTP plugin: secure terminal, SFTP, MCP automation, and guarded server operations. |
+| [jinpy666/dbx-plugin-files](https://github.com/jinpy666/dbx-plugin-files) | ![stars](https://img.shields.io/github/stars/jinpy666/dbx-plugin-files?color=f2f08d&logo=github) | Files Studio for DBX: a unified workspace for local folders, S3/MinIO, Alibaba Cloud OSS, Tencent Cloud COS, WebDAV, FTP, SFTP, and SMB/CIFS. |
+| [jinpy666/dbx-plugin-ldap](https://github.com/jinpy666/dbx-plugin-ldap) | ![stars](https://img.shields.io/github/stars/jinpy666/dbx-plugin-ldap?color=f2f08d&logo=github) | DBX LDAP plugin (io.dbx.ldap) - standalone repository |
+| [jinpy666/dbx-plugin-kafka](https://github.com/jinpy666/dbx-plugin-kafka) | ![stars](https://img.shields.io/github/stars/jinpy666/dbx-plugin-kafka?color=f2f08d&logo=github) | DBX Kafka plugin (io.dbx.kafka) - standalone repository |
+| [eryajf/dbx-plugin-k8s](https://github.com/eryajf/dbx-plugin-k8s) | ![stars](https://img.shields.io/github/stars/eryajf/dbx-plugin-k8s?color=f2f08d&logo=github) | DBX Plugin K8s plugin for DBX. |
+| [ragdollcb/waitWork](https://github.com/ragdollcb/waitWork) | ![stars](https://img.shields.io/github/stars/ragdollcb/waitWork?color=f2f08d&logo=github) | 等一会工作，休息一下。 waitWork 是 DBX 的休息工具插件，当前提供本地 TXT 小说阅读。 |
+| [yaoxinghuo/dbx-dev-tools](https://github.com/yaoxinghuo/dbx-dev-tools) | ![stars](https://img.shields.io/github/stars/yaoxinghuo/dbx-dev-tools?color=f2f08d&logo=github) | A collection of everyday developer utilities as a DBX plugin — pure frontend, universal package, no native sidecar. 日常开发工具集合的 DBX 插件——纯前端实现、universal 包、无原生 Sidecar。 |
 <!-- dbx-plugin-table:end -->
 
 ## 贡献指南
