@@ -43,14 +43,24 @@ def validate_sources(payload: dict) -> list[str]:
     return repositories
 
 
-def render(repositories: list[str]) -> str:
+def existing_descriptions(readme: str) -> dict[str, str]:
+    """Read descriptions from the current table so automation never rewrites them."""
+    descriptions: dict[str, str] = {}
+    for line in readme.splitlines():
+        match = re.match(r"\| \[([^]]+)\]\(https://github\.com/[^)]+\) \|.*?\| (.*?) \|$", line)
+        if match:
+            descriptions[match.group(1)] = match.group(2)
+    return descriptions
+
+
+def render(repositories: list[str], descriptions: dict[str, str]) -> str:
     rows = ["| Repository | Star | Description |", "| --- | --- | --- |"]
     for repository in repositories:
         metadata = get_json(API_URL.format(repository))
         html_url = metadata.get("html_url") or f"https://github.com/{repository}"
         stars = metadata.get("stargazers_count")
-        description = (metadata.get("description") or "").replace("|", "\\|").replace("\n", " ").strip()
-        if not isinstance(stars, int) or not description:
+        description = descriptions.get(repository, "")
+        if not isinstance(stars, int):
             raise RuntimeError(f"repository metadata is incomplete for {repository}")
         rows.append(
             f"| [{repository}]({html_url}) | ![stars](https://img.shields.io/github/stars/{repository}?color=f2f08d&logo=github) | {description} |"
@@ -64,7 +74,7 @@ def main() -> int:
     if START not in readme or END not in readme or readme.index(START) >= readme.index(END):
         raise RuntimeError("README.md is missing a valid plugin table marker pair")
     repositories = validate_sources(get_json(SOURCE_URL))
-    table = render(repositories)
+    table = render(repositories, existing_descriptions(readme))
     pattern = re.compile(re.escape(START) + r".*?" + re.escape(END), re.DOTALL)
     replacement = f"{START}\n{table}\n{END}"
     updated = pattern.sub(replacement, readme, count=1)
