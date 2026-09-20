@@ -3,7 +3,7 @@ name: Sync official DBX plugins
 on:
   schedule:
     # Run every two hours, offset from the top of the hour.
-    - cron: "17 */2 * * *"
+    - cron: "*/30 * * * *"
   workflow_dispatch:
 
 permissions:
