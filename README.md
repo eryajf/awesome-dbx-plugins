@@ -37,6 +37,7 @@
 | [Abeautifulsnow/dbx-plugin-api-studio](https://github.com/Abeautifulsnow/dbx-plugin-api-studio) | ![stars](https://img.shields.io/github/stars/Abeautifulsnow/dbx-plugin-api-studio?color=f2f08d&logo=github) | 一个轻量级的、通用的 DBX API 客户端 |
 | [NintyCat/dbx-plugin-NintyAPI](https://github.com/NintyCat/dbx-plugin-NintyAPI) | ![stars](https://img.shields.io/github/stars/NintyCat/dbx-plugin-NintyAPI?color=f2f08d&logo=github) | 一个 HTTP API 调试客户端 |
 | [Abeautifulsnow/dbx-plugin-excalidraw](https://github.com/Abeautifulsnow/dbx-plugin-excalidraw) | ![stars](https://img.shields.io/github/stars/Abeautifulsnow/dbx-plugin-excalidraw?color=f2f08d&logo=github) | 一个轻量级、本地优先的 Excalidraw 绘制工具 |
+| [kingwrcy/dbx-totp](https://github.com/kingwrcy/dbx-totp) | ![stars](https://img.shields.io/github/stars/kingwrcy/dbx-totp?color=f2f08d&logo=github) |  |
 <!-- dbx-plugin-table:end -->
 
 ## 贡献指南
