@@ -38,9 +38,9 @@
 | [NintyCat/dbx-plugin-NintyAPI](https://github.com/NintyCat/dbx-plugin-NintyAPI) | ![stars](https://img.shields.io/github/stars/NintyCat/dbx-plugin-NintyAPI?color=f2f08d&logo=github) | 一个 HTTP API 调试客户端 |
 | [Abeautifulsnow/dbx-plugin-excalidraw](https://github.com/Abeautifulsnow/dbx-plugin-excalidraw) | ![stars](https://img.shields.io/github/stars/Abeautifulsnow/dbx-plugin-excalidraw?color=f2f08d&logo=github) | 一个轻量级、本地优先的 Excalidraw 绘制工具 |
 | [kingwrcy/dbx-totp](https://github.com/kingwrcy/dbx-totp) | ![stars](https://img.shields.io/github/stars/kingwrcy/dbx-totp?color=f2f08d&logo=github) | 一个 TOTP 账号动态验证码管理工具 |
-| [summery-yk/dbx-plugin-portainer](https://github.com/summery-yk/dbx-plugin-portainer) | ![stars](https://img.shields.io/github/stars/summery-yk/dbx-plugin-portainer?color=f2f08d&logo=github) |  |
-| [NintyCat/dbx-plugin-NintyShell](https://github.com/NintyCat/dbx-plugin-NintyShell) | ![stars](https://img.shields.io/github/stars/NintyCat/dbx-plugin-NintyShell?color=f2f08d&logo=github) |  |
-| [tenltrs/dbx-calendar](https://github.com/tenltrs/dbx-calendar) | ![stars](https://img.shields.io/github/stars/tenltrs/dbx-calendar?color=f2f08d&logo=github) |  |
+| [summery-yk/dbx-plugin-portainer](https://github.com/summery-yk/dbx-plugin-portainer) | ![stars](https://img.shields.io/github/stars/summery-yk/dbx-plugin-portainer?color=f2f08d&logo=github) | 把 Portainer 环境接进 DBX：按堆栈浏览容器、查看健康状态与资源占用、阅读日志 |
+| [NintyCat/dbx-plugin-NintyShell](https://github.com/NintyCat/dbx-plugin-NintyShell) | ![stars](https://img.shields.io/github/stars/NintyCat/dbx-plugin-NintyShell?color=f2f08d&logo=github) | 在工作台里打开本地 Shell 终端，输入并执行 shell 命令 |
+| [tenltrs/dbx-calendar](https://github.com/tenltrs/dbx-calendar) | ![stars](https://img.shields.io/github/stars/tenltrs/dbx-calendar?color=f2f08d&logo=github) | 日历插件，每一天都带农历、节气或节假日安排，双击任意格子即可记录备忘 |
 <!-- dbx-plugin-table:end -->
 
 ## 贡献指南
