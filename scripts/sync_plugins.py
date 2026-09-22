@@ -47,9 +47,11 @@ def existing_descriptions(readme: str) -> dict[str, str]:
     """Read descriptions from the current table so automation never rewrites them."""
     descriptions: dict[str, str] = {}
     for line in readme.splitlines():
-        match = re.match(r"\| \[([^]]+)\]\(https://github\.com/[^)]+\) \|.*?\| (.*?) \|$", line)
+        match = re.match(r"\| \[([^]]+)\]\(https://github\.com/[^)]+\) \|", line)
         if match:
-            descriptions[match.group(1)] = match.group(2)
+            cells = [field.strip() for field in line.split("|")[1:-1]]
+            if len(cells) >= 3:
+                descriptions[match.group(1)] = cells[-1]
     return descriptions
 
 
@@ -63,10 +65,24 @@ def existing_rows(readme: str) -> dict[str, str]:
     return rows
 
 
+def add_release_badge(row: str, repository: str) -> str:
+    """Add the release column to a legacy row while preserving its contents."""
+    fields = row.split("|")
+    if len(fields) < 5:
+        raise RuntimeError(f"invalid plugin table row for {repository}")
+    # Markdown table rows have an empty field before and after the cells.
+    cells = [field.strip() for field in fields[1:-1]]
+    if len(cells) == 4:
+        cells.insert(2, f"[![release](https://img.shields.io/github/v/release/{repository})](https://github.com/{repository}/releases)")
+    elif len(cells) != 5:
+        raise RuntimeError(f"unexpected plugin table columns for {repository}")
+    return "| " + " | ".join(cells) + " |"
+
+
 def render(
     repositories: list[str], descriptions: dict[str, str], preserved_rows: list[str]
 ) -> str:
-    rows = ["| Repository | Star | Description |", "| --- | --- | --- |"]
+    rows = ["| Repository | Star | Release | Description |", "| --- | --- | --- | --- |"]
     for repository in repositories:
         metadata = get_json(API_URL.format(repository))
         html_url = metadata.get("html_url") or f"https://github.com/{repository}"
@@ -75,9 +91,12 @@ def render(
         if not isinstance(stars, int):
             raise RuntimeError(f"repository metadata is incomplete for {repository}")
         rows.append(
-            f"| [{repository}]({html_url}) | ![stars](https://img.shields.io/github/stars/{repository}?color=f2f08d&logo=github) | {description} |"
+            f"| [{repository}]({html_url}) | ![stars](https://img.shields.io/github/stars/{repository}?color=f2f08d&logo=github) | [![release](https://img.shields.io/github/v/release/{repository})](https://github.com/{repository}/releases) | {description} |"
         )
-    rows.extend(preserved_rows)
+    rows.extend(
+        add_release_badge(row, re.search(r"\[([^]]+)\]\(https://github\.com/[^)]+\)", row).group(1))
+        for row in preserved_rows
+    )
     return "\n".join(rows)
 
 
