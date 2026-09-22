@@ -44,6 +44,9 @@
 | [lukelwai/dbx-md-notes](https://github.com/lukelwai/dbx-md-notes) | ![stars](https://img.shields.io/github/stars/lukelwai/dbx-md-notes?color=f2f08d&logo=github) |  |
 | [aiLi0617/dbx-plugin-toolbox](https://github.com/aiLi0617/dbx-plugin-toolbox) | ![stars](https://img.shields.io/github/stars/aiLi0617/dbx-plugin-toolbox?color=f2f08d&logo=github) |  |
 | [acornlive/dbx-plugin-json-pretty](https://github.com/acornlive/dbx-plugin-json-pretty) | ![stars](https://img.shields.io/github/stars/acornlive/dbx-plugin-json-pretty?color=f2f08d&logo=github) |  |
+| [caichangqing1120/dbx-plugin-prometheus](https://github.com/caichangqing1120/dbx-plugin-prometheus) | ![stars](https://img.shields.io/github/stars/caichangqing1120/dbx-plugin-prometheus?color=f2f08d&logo=github) |  |
+| [caichangqing1120/dbx-plugin-xxl-job](https://github.com/caichangqing1120/dbx-plugin-xxl-job) | ![stars](https://img.shields.io/github/stars/caichangqing1120/dbx-plugin-xxl-job?color=f2f08d&logo=github) |  |
+| [0verme/dbx-plugin-plan-detective](https://github.com/0verme/dbx-plugin-plan-detective) | ![stars](https://img.shields.io/github/stars/0verme/dbx-plugin-plan-detective?color=f2f08d&logo=github) |  |
 <!-- dbx-plugin-table:end -->
 
 ## 贡献指南
