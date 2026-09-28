@@ -49,6 +49,8 @@
 | [0verme/dbx-plugin-plan-detective](https://github.com/0verme/dbx-plugin-plan-detective) | ![stars](https://img.shields.io/github/stars/0verme/dbx-plugin-plan-detective?color=f2f08d&logo=github) | [![release](https://img.shields.io/github/v/release/0verme/dbx-plugin-plan-detective)](https://github.com/0verme/dbx-plugin-plan-detective/releases) | 为 DBX 提供 SQL 执行计划解析、性能诊断与 Plan Diff 能力 |
 | [yxlongery/dbx-logviewer](https://github.com/yxlongery/dbx-logviewer) | ![stars](https://img.shields.io/github/stars/yxlongery/dbx-logviewer?color=f2f08d&logo=github) | [![release](https://img.shields.io/github/v/release/yxlongery/dbx-logviewer)](https://github.com/yxlongery/dbx-logviewer/releases) | 在 DBX 服务器上直接看 .log 日志 |
 | [0verme/dbx-plugin-SchemaSeed](https://github.com/0verme/dbx-plugin-SchemaSeed) | ![stars](https://img.shields.io/github/stars/0verme/dbx-plugin-SchemaSeed?color=f2f08d&logo=github) | [![release](https://img.shields.io/github/v/release/0verme/dbx-plugin-SchemaSeed)](https://github.com/0verme/dbx-plugin-SchemaSeed/releases) | 一款面向 DBX 的测试数据生成插件 |
+| [Zer0ON1/dbx-plugin-imrepo](https://github.com/Zer0ON1/dbx-plugin-imrepo) | ![stars](https://img.shields.io/github/stars/Zer0ON1/dbx-plugin-imrepo?color=f2f08d&logo=github) | [![release](https://img.shields.io/github/v/release/Zer0ON1/dbx-plugin-imrepo)](https://github.com/Zer0ON1/dbx-plugin-imrepo/releases) |  |
+| [yuwenGueen/dbx-code-editor](https://github.com/yuwenGueen/dbx-code-editor) | ![stars](https://img.shields.io/github/stars/yuwenGueen/dbx-code-editor?color=f2f08d&logo=github) | [![release](https://img.shields.io/github/v/release/yuwenGueen/dbx-code-editor)](https://github.com/yuwenGueen/dbx-code-editor/releases) |  |
 <!-- dbx-plugin-table:end -->
 
 ## 贡献指南
