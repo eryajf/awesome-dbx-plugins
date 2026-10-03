@@ -51,6 +51,7 @@
 | [0verme/dbx-plugin-SchemaSeed](https://github.com/0verme/dbx-plugin-SchemaSeed) | ![stars](https://img.shields.io/github/stars/0verme/dbx-plugin-SchemaSeed?color=f2f08d&logo=github) | [![release](https://img.shields.io/github/v/release/0verme/dbx-plugin-SchemaSeed)](https://github.com/0verme/dbx-plugin-SchemaSeed/releases) | 一款面向 DBX 的测试数据生成插件 |
 | [Zer0ON1/dbx-plugin-imrepo](https://github.com/Zer0ON1/dbx-plugin-imrepo) | ![stars](https://img.shields.io/github/stars/Zer0ON1/dbx-plugin-imrepo?color=f2f08d&logo=github) | [![release](https://img.shields.io/github/v/release/Zer0ON1/dbx-plugin-imrepo)](https://github.com/Zer0ON1/dbx-plugin-imrepo/releases) |  |
 | [yuwenGueen/dbx-code-editor](https://github.com/yuwenGueen/dbx-code-editor) | ![stars](https://img.shields.io/github/stars/yuwenGueen/dbx-code-editor?color=f2f08d&logo=github) | [![release](https://img.shields.io/github/v/release/yuwenGueen/dbx-code-editor)](https://github.com/yuwenGueen/dbx-code-editor/releases) |  |
+| [yiqiui/dbx-plugin-leetcode-cn](https://github.com/yiqiui/dbx-plugin-leetcode-cn) | ![stars](https://img.shields.io/github/stars/yiqiui/dbx-plugin-leetcode-cn?color=f2f08d&logo=github) | [![release](https://img.shields.io/github/v/release/yiqiui/dbx-plugin-leetcode-cn)](https://github.com/yiqiui/dbx-plugin-leetcode-cn/releases) |  |
 <!-- dbx-plugin-table:end -->
 
 ## 贡献指南
