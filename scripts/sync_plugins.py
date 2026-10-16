@@ -72,9 +72,9 @@ def add_release_badge(row: str, repository: str) -> str:
         raise RuntimeError(f"invalid plugin table row for {repository}")
     # Markdown table rows have an empty field before and after the cells.
     cells = [field.strip() for field in fields[1:-1]]
-    if len(cells) == 4:
+    if len(cells) == 3:
         cells.insert(2, f"[![release](https://img.shields.io/github/v/release/{repository})](https://github.com/{repository}/releases)")
-    elif len(cells) != 5:
+    elif len(cells) != 4:
         raise RuntimeError(f"unexpected plugin table columns for {repository}")
     return "| " + " | ".join(cells) + " |"
 
