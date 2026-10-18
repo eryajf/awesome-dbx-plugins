@@ -62,6 +62,7 @@
 | [ma123456mai/ai-config-importer](https://github.com/ma123456mai/ai-config-importer) | ![stars](https://img.shields.io/github/stars/ma123456mai/ai-config-importer?color=f2f08d&logo=github) | [![release](https://img.shields.io/github/v/release/ma123456mai/ai-config-importer)](https://github.com/ma123456mai/ai-config-importer/releases) |  |
 | [yuwenGueen/dbx-doudb](https://github.com/yuwenGueen/dbx-doudb) | ![stars](https://img.shields.io/github/stars/yuwenGueen/dbx-doudb?color=f2f08d&logo=github) | [![release](https://img.shields.io/github/v/release/yuwenGueen/dbx-doudb)](https://github.com/yuwenGueen/dbx-doudb/releases) |  |
 | [alvinades98/dbx-pg-restore](https://github.com/alvinades98/dbx-pg-restore) | ![stars](https://img.shields.io/github/stars/alvinades98/dbx-pg-restore?color=f2f08d&logo=github) | [![release](https://img.shields.io/github/v/release/alvinades98/dbx-pg-restore)](https://github.com/alvinades98/dbx-pg-restore/releases) |  |
+| [IceFoxs/dbx-plugin-aes-tools](https://github.com/IceFoxs/dbx-plugin-aes-tools) | ![stars](https://img.shields.io/github/stars/IceFoxs/dbx-plugin-aes-tools?color=f2f08d&logo=github) | [![release](https://img.shields.io/github/v/release/IceFoxs/dbx-plugin-aes-tools)](https://github.com/IceFoxs/dbx-plugin-aes-tools/releases) |  |
 <!-- dbx-plugin-table:end -->
 
 ## 贡献指南
