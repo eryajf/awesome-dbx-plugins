@@ -13,8 +13,13 @@ from urllib.request import Request, urlopen
 
 SOURCE_URL = "https://raw.githubusercontent.com/t8y2/dbx-store/main/automation/plugin-sources.json"
 API_URL = "https://api.github.com/repos/{}"
+GITHUB_API_PREFIX = "https://api.github.com/repos/"
 START = "<!-- dbx-plugin-table:start -->"
 END = "<!-- dbx-plugin-table:end -->"
+
+
+class RepositoryNotFound(RuntimeError):
+    """Raised when an official source points to a repository that no longer exists."""
 
 
 def get_json(url: str) -> dict:
@@ -25,7 +30,11 @@ def get_json(url: str) -> dict:
     try:
         with urlopen(Request(url, headers=headers), timeout=30) as response:
             return json.load(response)
-    except (HTTPError, URLError, TimeoutError, json.JSONDecodeError) as exc:
+    except HTTPError as exc:
+        if exc.code == 404 and url.startswith(GITHUB_API_PREFIX):
+            raise RepositoryNotFound(f"repository not found: {url}") from exc
+        raise RuntimeError(f"failed to fetch {url}: {exc}") from exc
+    except (URLError, TimeoutError, json.JSONDecodeError) as exc:
         raise RuntimeError(f"failed to fetch {url}: {exc}") from exc
 
 
@@ -84,7 +93,11 @@ def render(
 ) -> str:
     rows = ["| Repository | Star | Release | Description |", "| --- | --- | --- | --- |"]
     for repository in repositories:
-        metadata = get_json(API_URL.format(repository))
+        try:
+            metadata = get_json(API_URL.format(repository))
+        except RepositoryNotFound as exc:
+            print(f"Skipping unavailable repository {repository}: {exc}", file=sys.stderr)
+            continue
         html_url = metadata.get("html_url") or f"https://github.com/{repository}"
         stars = metadata.get("stargazers_count")
         description = descriptions.get(repository, "")
